@@ -1,0 +1,35 @@
+.todo__container{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.todo__box{
+    border: 1px solid black;
+    height: 200px;
+    
+}
+.todo__image{
+    width: 100%;
+    height: 140px;
+}
+.todo__title{
+    padding: 5px;
+    text-align: center;
+}
+@media (max-width: 998px) {
+    .todo__container { 
+        grid-template-columns: repeat(3, 1fr); 
+    }
+  }
+@media (max-width: 768px) {
+    .todo__container { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+@media (max-width: 400px) {
+    .todo__container { 
+        grid-template-columns: repeat(1, 1fr); 
+    }
+  }
+  
